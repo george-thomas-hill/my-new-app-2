@@ -8,6 +8,12 @@ import path from "path";
 import os from "os";
 */
 
+/*
 const watcher = chokidar.watch(".", {
     // ignored: /(^|[\/\\])\../, // ignore dotfiles
+});
+*/
+
+chokidar.watch('.').on('all', (event, path) => {
+    console.log(event, path);
 });
