@@ -8,4 +8,5 @@ module.exports = {
   module: {
     rules: require('./webpack.rules'),
   },
+  // target: "electron15.2-main"
 };
